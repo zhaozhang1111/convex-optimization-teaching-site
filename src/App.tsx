@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import DualFunctionPage from "./components/DualFunctionPage";
 function NavButton({
   active,
   children,
@@ -51,26 +51,7 @@ function Card({
 }
 
 function DualPage() {
-  return (
-    <div style={{ display: "grid", gap: 20 }}>
-      <Card title="Chapter 1 · Lagrangian Dual Function">
-        这一页先保留为稳定入口页。下一步我们会把你之前那套“仿射函数族 →
-        逐点下确界 → concave → lower bound”的完整动画版本，安全地嵌回这里。
-      </Card>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-          gap: 20,
-        }}
-      >
-        <Card title="Step 1">固定不同的 x，形成一族关于 λ 的仿射函数。</Card>
-        <Card title="Step 2">对仿射函数逐点取下确界，得到 concave 的 g(λ)。</Card>
-        <Card title="Step 3">验证 g(λ) ≤ p*，说明对偶函数给出 lower bound。</Card>
-      </div>
-    </div>
-  );
+  return <DualFunctionPage />;
 }
 
 function KKTPage() {
