@@ -424,3 +424,125 @@ button, input {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.site-top-shell {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 24px 24px 0;
+}
+
+.site-top-card {
+  border: 1px solid rgba(24, 24, 24, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 28px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.site-top-kicker {
+  font-size: 13px;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.site-top-card h1 {
+  margin: 0;
+  letter-spacing: -0.03em;
+  font-size: 30px;
+}
+
+.site-top-card p {
+  max-width: 880px;
+  color: #5b5b5b;
+  line-height: 1.75;
+  margin: 10px 0 0;
+}
+
+.site-top-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.top-nav-btn {
+  border-radius: 18px;
+  padding: 12px 16px;
+  border: 1px solid rgba(24,24,24,0.1);
+  background: #fff;
+  color: #18181b;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.top-nav-btn-active {
+  background: #18181b;
+  color: #fff;
+}
+
+.kkt-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.7fr);
+  gap: 18px;
+}
+
+.kkt-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.kkt-card {
+  border-radius: 22px;
+  border: 1px solid rgba(24,24,24,0.08);
+  background: rgba(255,255,255,0.9);
+  padding: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+}
+
+.kkt-card-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.kkt-card-text {
+  color: #525252;
+  line-height: 1.75;
+}
+
+.kkt-bottom-panel {
+  margin-top: 18px;
+}
+
+@media (max-width: 1180px) {
+  .kkt-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .site-top-shell {
+    padding: 14px 14px 0;
+  }
+
+  .site-top-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .site-top-card h1 {
+    font-size: 26px;
+  }
+
+  .kkt-cards {
+    grid-template-columns: 1fr;
+  }
+}
